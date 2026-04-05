@@ -181,4 +181,79 @@
     right: 0;
     border-right-color: var(--border);
   }
+
+  #todo {
+  border-top: 1px solid var(--border);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+
+  @media (max-width: 1024px) {
+    text-align: center;
+    place-items: center;
+  }
+}
+
+.input_area {
+  background-color: #c6e5d9;
+  width: auto;
+  height: 30px;
+  margin: 8px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+input {
+  border: none;
+  border-radius: 8px;
+  padding: 6px 16px;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 4px 16px;
+  margin: 0px 2px;
+
+  &:hover {
+    background-color: var(--accent-bg);
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.incomplete_area,
+.complete_area {
+  border: 2px solid #aacfd0;
+  border-radius: 8px;
+  padding: 8px;
+  width: 400px;
+  min-height: 200px;
+  margin: 8px;
+}
+
+.complete_area {
+  background-color: #c9dede;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0;
+  color: #666;
+}
+
+.list_row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+}
+
+.todo-item {
+  margin: 6px;
+  margin-right: auto;
+}
 }
