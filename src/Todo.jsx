@@ -7,34 +7,40 @@ import './Todo.css'
 export const Todo = () => {
   return (
     <>
-    <div>
-      <input placeholder="Todoを入力" />
-      <button>追加</button>
-    </div>
-    <div>
-      <p>未完了のTodo</p>
-      <ul>
-        <li>
-          <p>Todo1</p>
-          <button>完了</button>
-          <button>削除</button>
-        </li>
-        <li>
-          <p>Todo2</p>
-          <button>完了</button>
-          <button>削除</button>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <p>完了のTodo</p>
-      <ul>
-        <li>
-          <p>Todo3</p>
-          <button>戻す</button>
-        </li>
-      </ul>
-    </div>
+      <div className="input_area">
+        <input placeholder="Todoを入力" />
+        <button>追加</button>
+      </div>
+      <div className="incomplete_area">
+        <p className="title">未完了のTodo</p>
+        <ul>
+          <li>
+            <div className="list_row">
+              <p className="todo_item">Todo1</p>
+              <button>完了</button>
+              <button>削除</button>
+            </div>
+          </li>
+          <li>
+            <div className="list_row">
+              <p className="todo_item">Todo2</p>
+              <button>完了</button>
+              <button>削除</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div className="complete_area">
+        <p className="title">完了のTodo</p>
+        <ul>
+          <li>
+            <div className="list_row">
+              <p className="todo_item">Todo3</p>
+              <button>戻す</button>
+            </div>
+          </li>
+        </ul>
+      </div>
     </>
   )
 }
