@@ -5,6 +5,8 @@ import heroImg from './assets/hero.png'
 import './Todo.css'
 
 export const Todo = () => {
+  const [incompleteTodos, setIncompleteTodos] = useState(["Todo1", "Todo2"]);
+  const [completeTodos, setCompleteTodos] = useState(["Todo3", "Todo4"]);
   return (
     <>
       <div className="input_area">
@@ -14,31 +16,33 @@ export const Todo = () => {
       <div className="incomplete_area">
         <p className="title">未完了のTodo</p>
         <ul>
-          <li>
-            <div className="list_row">
-              <p className="todo_item">Todo1</p>
-              <button>完了</button>
-              <button>削除</button>
-            </div>
-          </li>
-          <li>
-            <div className="list_row">
-              <p className="todo_item">Todo2</p>
-              <button>完了</button>
-              <button>削除</button>
-            </div>
-          </li>
+          {incompleteTodos.map((todo) => {
+            return (
+              <li key={todo}>
+                <div className="list_row">
+                  <p className="todo_item">{todo}</p>
+                  <button>完了</button>
+                  <button>削除</button>
+                </div>
+              </li>
+            )
+          })}
         </ul>
       </div>
       <div className="complete_area">
         <p className="title">完了のTodo</p>
         <ul>
-          <li>
-            <div className="list_row">
-              <p className="todo_item">Todo3</p>
-              <button>戻す</button>
-            </div>
-          </li>
+          {completeTodos.map((todo) => {
+            return (
+              <li key={todo}>
+                <div className="list_row">
+                  <p className="todo_item">{todo}</p>
+                  <button>戻す</button>
+                </div>
+              </li>
+            )
+          })}
+
         </ul>
       </div>
     </>
