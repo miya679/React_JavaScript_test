@@ -1,0 +1,83 @@
+.input_area {
+  background-color: #c6e5d9;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 400px;
+  margin: 8px;
+  padding: 8px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.input_area input {
+  flex: 1;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+}
+
+.input_area button,
+.list_row button {
+  border-radius: 8px;
+  border: none;
+  padding: 6px 12px;
+  margin: 0 2px;
+  cursor: pointer;
+}
+
+.input_area button:hover,
+.list_row button:hover {
+  background-color: #8fc7b2;
+  color: #fff;
+}
+
+.incomplete_area,
+.complete_area {
+  border: 2px solid #aacfd0;
+  border-radius: 8px;
+  padding: 8px;
+  width: 400px;
+  min-height: 200px;
+  margin: 8px;
+  box-sizing: border-box;
+}
+
+.incomplete_area {
+  background-color: #f7fffb;
+}
+
+.complete_area {
+  background-color: #c9dede;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #666;
+}
+
+.incomplete_area ul,
+.complete_area ul {
+  padding: 0;
+  margin: 0;
+}
+
+.incomplete_area li,
+.complete_area li {
+  list-style: none;
+}
+
+.list_row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+}
+
+.todo_item {
+  margin: 6px 0;
+  margin-right: auto;
+}
