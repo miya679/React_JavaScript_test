@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const PrimaryButton = (props) => {
+export const SecondaryButton = (props) => {
     const { children } = props;
     return (
         <SButton>{children}</SButton>
@@ -8,7 +8,7 @@ export const PrimaryButton = (props) => {
 };
 
 const SButton = styled.button`
-    background-color: #40514e;
+    background-color: #11999e;
     color: #fff;  
     padding: 16px 24px; //上下　左右
     border: none;
