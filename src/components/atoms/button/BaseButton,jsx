@@ -1,0 +1,12 @@
+import styled from "styled-components"
+
+export const BaseButton = styled.button`
+    padding: 16px 24px; //上下　左右
+    border: none;
+    border-radius: 16px;
+    outline: none;
+    font-size: 16px;
+    &:hover {
+        opacity: 0.8;
+    }
+        `
